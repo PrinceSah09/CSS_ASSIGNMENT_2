@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-left: 11em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #80007E;
+  background-color: #D8DA3D;
+  font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+
+ul.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 9em;
+}
+ul.navbar li {
+  background: white;
+  padding: 0.3em;
+  margin: 0.5em 0;
+  width: 170px;
+}
+ul.navbar a {
+  text-decoration: none;
+  color: #80007E;
+}
+
+#first_Nav_Border {
+  border-right: 16px solid #FF7F00;
+}
+
+#Second_Nav_Border {
+  border-right: 16px solid #0000FF;
+}
+
+.section {
+  font-size: 18px;
+  margin: 30px 0 0 70px;
+}
+.section p {
+  margin: 15px 0 1px 0;
+}
+
+a:visited {
+  color: #80007E;
+}
+
+.dotted_border {
+  border-top: thin dotted;
+  margin-top: 50px;
+}
+
+.box {
+  margin-top: 40px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.box .box1,
+.box .box2,
+.box .box3 {
+  border: 2px;
+  border-color: rgb(0, 0, 0);
+  border-style: dashed;
+  margin: 15px 0;
+  padding: 10px;
+  width: 1000px;
+}
+.box .box1:hover,
+.box .box2:hover,
+.box .box3:hover {
+  animation: bounceEffect 0.5s ease;
+}
+.box .box1 {
+  text-align: left;
+}
+.box .box2 {
+  text-align: right;
+  font-style: italic;
+  border: 2px;
+  border-color: #FF7F00;
+  border-style: dashed;
+}
+.box .box3 {
+  font-weight: bold;
+  text-align: center;
+  border: 1px;
+  border-color: rgb(0, 0, 0);
+  border-style: dashed;
+}
+
+@keyframes bounceEffect {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+footer {
+  margin-top: 40px;
+}/*# sourceMappingURL=style.css.map */
