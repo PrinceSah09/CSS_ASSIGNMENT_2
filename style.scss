@@ -13,12 +13,13 @@ $black: rgb(0, 0, 0);
 
 
 // Declearing Mixin
-@mixin border($border_length,  $border_style,  $border_color){
+@mixin border($border_length, $border_style, $border_color) {
     border: $border_length;
     border-color: $border_color;
-    border-style: $border_style; 
+    border-style: $border_style;
 }
-@mixin text_align($value){
+
+@mixin text_align($value) {
     text-align: $value;
 }
 
@@ -41,13 +42,18 @@ ul.navbar {
     position: absolute;
     top: 2em;
     left: 1em;
-    width: 9em;
+    width: 20em; 
+    font-size: larger;
+   
 
     li {
         background: white;
         padding: 0.3em;
         margin: 0.5em 0;
-        width: 170px;
+        height: 30px;
+        width: 70%;
+        display: flex; 
+        align-items: center;
     }
 
     a {
@@ -58,21 +64,22 @@ ul.navbar {
 
 // Edge Border Styling
 #first_Nav_Border {
-    border-right: 16px solid $Orange;   //Using ShortHand 
+    border-right: 16px solid $Orange; //Using ShortHand 
 }
 
 #Second_Nav_Border {
-    border-right: 16px solid $Blue;   
+    border-right: 16px solid $Blue;
 }
 
 
 // Section Styling
 .section {
-    font-size: 18px;
-    margin: 30px 0 0 70px;
+    font-size: 22px;
+    margin: 30px 0 0 220px;
 
     p {
         margin: 15px 0 1px 0;
+        width: 90%;
     }
 }
 
@@ -88,7 +95,7 @@ a:visited {
 
 // BOX Styling
 .box {
-    margin-top: 40px;
+    margin: 40px 30px 0 0;
     color: $black;
     cursor: pointer;
 
@@ -98,7 +105,7 @@ a:visited {
         @include border(2px, dashed, $black);
         margin: 15px 0;
         padding: 10px;
-        width: 1000px;
+        width: 90%;
 
         // Animation on hover
         &:hover {
@@ -113,13 +120,13 @@ a:visited {
     .box2 {
         @include text_align(right);
         font-style: italic;
-        @include border(2px, dashed, $Orange); 
+        @include border(2px, dashed, $Orange);
     }
 
     .box3 {
         font-weight: bold;
         @include text_align(center);
-        @include border(1px, dashed, $black); 
+        @include border(1px, dashed, $black);
     }
 }
 
@@ -149,4 +156,12 @@ footer {
     margin-top: 40px;
 }
 
-// Notes: There is no need to add add extend properties for this particular Project.
+// Media Querry for Responsiveness
+@media only screen and (min-width: 800px){
+    section{
+        flex-direction: row;
+    }
+}
+
+
+//Dear Mentor,  There is no need to add extend properties for this particular Project (I have knowledge of extend)

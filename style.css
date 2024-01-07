@@ -18,13 +18,17 @@ ul.navbar {
   position: absolute;
   top: 2em;
   left: 1em;
-  width: 9em;
+  width: 20em;
+  font-size: larger;
 }
 ul.navbar li {
   background: white;
   padding: 0.3em;
   margin: 0.5em 0;
-  width: 170px;
+  height: 30px;
+  width: 70%;
+  display: flex;
+  align-items: center;
 }
 ul.navbar a {
   text-decoration: none;
@@ -40,11 +44,12 @@ ul.navbar a {
 }
 
 .section {
-  font-size: 18px;
-  margin: 30px 0 0 70px;
+  font-size: 22px;
+  margin: 30px 0 0 220px;
 }
 .section p {
   margin: 15px 0 1px 0;
+  width: 90%;
 }
 
 a:visited {
@@ -57,7 +62,7 @@ a:visited {
 }
 
 .box {
-  margin-top: 40px;
+  margin: 40px 30px 0 0;
   color: rgb(0, 0, 0);
   cursor: pointer;
 }
@@ -69,7 +74,7 @@ a:visited {
   border-style: dashed;
   margin: 15px 0;
   padding: 10px;
-  width: 1000px;
+  width: 90%;
 }
 .box .box1:hover,
 .box .box2:hover,
@@ -107,4 +112,10 @@ a:visited {
 }
 footer {
   margin-top: 40px;
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
