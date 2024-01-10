@@ -42,9 +42,9 @@ ul.navbar {
     position: absolute;
     top: 2em;
     left: 1em;
-    width: 20em; 
+    width: 20em;
     font-size: larger;
-   
+
 
     li {
         background: white;
@@ -52,7 +52,7 @@ ul.navbar {
         margin: 0.5em 0;
         height: 30px;
         width: 70%;
-        display: flex; 
+        display: flex;
         align-items: center;
     }
 
@@ -157,11 +157,10 @@ footer {
 }
 
 // Media Querry for Responsiveness
-@media only screen and (min-width: 800px){
-    section{
+@media only screen and (min-width: 800px) {
+    section {
         flex-direction: row;
     }
 }
-
 
 //Dear Mentor,  There is no need to add extend properties for this particular Project (I have knowledge of extend)
